@@ -19,7 +19,7 @@ include_once('config.php');
 			</style>
 	<script src="js/f.js"></script>
 		<meta charset="UTF-8">
-		<title>ESH-Portfolio_Admin</title>
+		<title>HL-Portfolio_Admin</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -44,22 +44,21 @@ include_once('config.php');
 	
 
 			<!-- Three -->
-			<section id="three" class="wrapper style3 special">
+			<section id="three" >
 			<br>
 			<a href="logout.php" class="button log-out-btn">Logout</a>
 			<p style="margin-left:82%; font-size:20px; text-decoration:underline white;"></p>
 			
 			<div class="mainballinaction">
 							<div class="block" >
-							<a href="adddmenu.php">
-							<i class="fa fa-plus-square-o fa-5x" style="color:white; margin-left: 0.1em"></i>
-							<p style="padding-left: 2%;">Add menu</p>
-							</a>
+							<a href="adddmenu.php "class="button">
+					<button class="button">Add Menu</button>
+				</a>
 							</div>
-							<div class="block" style="margin-right:1em;">
-							<a href="editmenu.php">
-							<i class="fa fa-edit fa-5x" style="color:white; margin-left: 0.3em"></i>
-							<p  style="padding-left: 5%;">Edit or delete</p>
+							<div class="block" >
+							<a href="editmenu.php "class="button">
+					<button class="button">Edit or Delete</button>
+				</a>
 							</a>
 							</div>
 							</div>
@@ -68,16 +67,14 @@ include_once('config.php');
 						
 			<div class="mainballinaction">
 							<div class="block">
-							<a href="add_main.php">
-							<i class="fa fa-plus-square-o fa-5x" style="color:white; margin-left: 0.1em"></i>
-							<p style="padding-left: 3%;">Add main</p>
-							</a>
+							<a href="add_main.php "class="button">
+					<button class="button">Add Main</button>
+				</a>
 							</div>
-							<div class="block" style="margin-right:1em;">
-							<a href="edit_main.php">
-							<i class="fa fa-edit fa-5x" style="color:white; margin-left: 0.3em"></i>
-							<p style="padding-left: 7%;">Edit or delete</p>
-							</a>
+							<div class="block" >
+							<a href="edit_main.php "class="button">
+					<button class="button">Edit or Delete</button>
+				</a>
 							</div>
 							</div>
 							
@@ -87,16 +84,14 @@ include_once('config.php');
 							<br>
 			<div class="mainballinaction">
 							<div class="block">
-							<a href="add_contwo.php">
-							<i class="fa fa-plus-square-o fa-5x" style="color:white; margin-left: 0.1em"></i>
-							<p style="margin-left: 2%;">Add container-two</p>
-							</a>
+							<a href="add_contwo.php "class="button">
+					<button class="button">Add Container</button>
+				</a>
 							</div>
-							<div class="block" style="margin-right:1em;">
-							<a href="edit_contwo.php">
-							<i class="fa fa-edit fa-5x" style="color:white; margin-left: 0.3em"></i>
-							<p style="padding-left: 7%;">Edit or delete</p>
-							</a>
+							<div class="block">
+							<a href="edit_contwo.php "class="button">
+					<button class="button">Edit Or Delete</button>
+				</a>
 							</div>
 							</div>
 							

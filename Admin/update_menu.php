@@ -29,7 +29,7 @@ if(isset($_POST['update_menu']))
 		menu_name = '$menu_name',
 		menu_link = '$menu_link',
 		menu_module = '$menu_module'
-		WHERE id_menu = '$id_menu'
+		WHERE id_menu = $id_menu
 	
 		");
 		
@@ -39,8 +39,7 @@ if(isset($_POST['update_menu']))
 ?>
 <?php
 if(isset($_GET['id_menu'])) { 
-
-$id_menu = $_GET['id_menu'];
+	$id_menu = $_GET['id_menu'];
 }
 $result = mysqli_query($conn,"SELECT * FROM menu WHERE id_menu = '$id_menu'");
 

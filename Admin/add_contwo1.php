@@ -1,5 +1,6 @@
 <?php
 include_once('config.php');
+session_start();
 
 ?>
 <?php
@@ -32,8 +33,13 @@ if(isset($_POST['shto'])) {
 		
 		$result = mysqli_query($conn, "INSERT INTO containertwo (contwo_title,contwo_description,contwo_pic, layout) VALUES('$contwo_title','$contwo_description','$contwo_pic', '$layout') ");
 		
-		echo "<font color='green'>Data added successfully.";
-		echo "<br/><a href='edit_contwo.php'>View Result</a>";
+		if($result){
+			$_SESSION['add_contwo_message'] = "<p style='color:green;font-weight:800'>Te dhenat u shtuan me sukses</p>";
+			header('location:edit_main.php');
+		}else{
+			$_SESSION['add_contwo_message'] = "<p style='color:red;font-weight:800'>Pati gabim ne shtimin e te dhenave, provoni me vone!</p>";
+			header('location:edit_main.php');
+		}
 	}
 }
 ?>

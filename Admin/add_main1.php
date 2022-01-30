@@ -1,6 +1,6 @@
 <?php
 include_once('config.php');
-
+session_start();
 ?>
 <?php
 
@@ -30,8 +30,13 @@ if(isset($_POST['shto'])) {
 		
 		$result = mysqli_query($conn, "INSERT INTO main (m_title,m_description,	m_pic) VALUES('$m_title','$m_description','$m_pic') ");
 		
-		echo "<font color='green'>Data added successfully.";
-		echo "<br/><a href='edit_main.php'>View Result</a>";
+		if($result){
+			$_SESSION['add_main_message'] = "<p style='color:green;font-weight:800'>Te dhenat u shtuan me sukses</p>";
+			header('location:edit_main.php');
+		}else{
+			$_SESSION['add_main_message'] = "<p style='color:red;font-weight:800'>Pati gabim ne shtimin e te dhenave, provoni me vone!</p>";
+			header('location:edit_main.php');
+		}
 	}
 }
 ?>

@@ -1,3 +1,3 @@
 <?php
-$conn = mysqli_connect("localhost","root", "","eshportfolio") or die ("Gabim në lidhje!");
+$conn = mysqli_connect("localhost","root", "","hlportfolio") or die ("Gabim në lidhje!");
 ?>

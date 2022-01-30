@@ -10,7 +10,7 @@ if ((isset($_SESSION['username']) != ''))
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>ESH - Portfolio</title>
+		<title>HL - Portfolio</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />

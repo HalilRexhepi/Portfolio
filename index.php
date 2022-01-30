@@ -7,7 +7,7 @@ include_once("config.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESH-Portfolio</title>
+    <title>Halil Rexhepi Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/57631137bb.js" crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@ include_once("config.php");
             <h2 class='section-title'>Skills</h2>
             <div class='cards'>
             <?php
-                $sql = mysqli_query($conn,"SELECT * FROM containertwo WHERE layout='skills' ORDER BY id_contwo DESC LIMIT 3");//die(var_dump($sql));
+                $sql = mysqli_query($conn,"SELECT * FROM containertwo WHERE layout='skills' ORDER BY id_contwo DESC LIMIT 3");
                 if(mysqli_num_rows($sql) > 0){
                     while($row_con = mysqli_fetch_array($sql)){
             ?>
@@ -72,7 +72,7 @@ include_once("config.php");
             <h2 class='section-title'>Projects</h2>
             <div class="cards">
                 <?php
-                    $sql = mysqli_query($conn,"SELECT * FROM containertwo WHERE layout='projects' ORDER BY id_contwo DESC LIMIT 2");//die(var_dump($sql));
+                    $sql = mysqli_query($conn,"SELECT * FROM containertwo WHERE layout='projects' ORDER BY id_contwo DESC LIMIT 2");
                     if(mysqli_num_rows($sql) > 0){
                         while($row_con = mysqli_fetch_array($sql)){
                 ?>
